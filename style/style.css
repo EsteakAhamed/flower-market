@@ -163,6 +163,61 @@ body {
     background-color: #e06c1a;
 }
 
+.plants-lover {
+    padding: 4rem 0;
+    background-color: #eef2f5;
+}
+
+.plants-lover .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lover-content {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.lover-image {
+    max-width: 400px;
+    height: auto;
+}
+
+.badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    height: 160px;
+}
+
+.lover-text {
+    max-width: 500px;
+    margin-left: 2rem;
+}
+
+.lover-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lover-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.lover-text li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
@@ -203,5 +258,27 @@ body {
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plants-lover .container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .lover-image {
+        order: -1;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .badge {
+        top: -10px;
+        right: -10px;
+        height: 160px;
+    }
+
+    .lover-text {
+        max-width: 100%;
+        margin-left: 0;
     }
 }
