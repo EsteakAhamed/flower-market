@@ -274,7 +274,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4); /* Optional dark overlay for better text readability */
+    background: rgba(0, 0, 0, 0.4); 
     padding: 1rem;
     text-align: center;
 }
@@ -486,7 +486,7 @@ footer .container {
 
     .hero .container {
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
 
     .hero-image {
@@ -509,11 +509,12 @@ footer .container {
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .plants-lover .container {
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
 
     .lover-image {
@@ -525,12 +526,16 @@ footer .container {
     .badge {
         top: -10px;
         right: -10px;
-        height: 160px;
+        height: 120px;
     }
 
     .lover-text {
         max-width: 100%;
         margin-left: 0;
+    }
+
+    .latest-deals .container {
+        padding: 0 1rem;
     }
 
     .deals-grid {
@@ -540,15 +545,11 @@ footer .container {
     }
 
     .deal-card {
-        height: 200px; 
+        height: 200px;
     }
 
     .large-card {
-        grid-row: auto; 
-    }
-
-    .latest-deals .container {
-    padding: 0 1rem;
+        height: 200px;
     }
 
     .join h2 {
@@ -581,5 +582,4 @@ footer .container {
     .footer-social a {
         margin: 0 0.5rem;
     }
-
 }
