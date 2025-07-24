@@ -344,6 +344,112 @@ body {
     grid-area: right;
 }
 
+.join {
+    padding: 4rem 0;
+    background: url('../image/news-letter.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.join form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.join input[type="email"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.join button {
+    padding: 0.5rem 1.5rem;
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join button:hover {
+    background-color: #e06c1a;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #eef2f5;
+    color: #333;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: #f97316;
+}
+
+.footer-social a {
+    margin-left: 1rem;
+}
+
+.footer-social img {
+    height: 24px;
+    width: 24px;
+}
+
 @media (max-width: 768px) {
     .deals-grid {
         grid-template-areas:
@@ -443,6 +549,37 @@ body {
 
     .latest-deals .container {
     padding: 0 1rem;
-}
+    }
+
+    .join h2 {
+        font-size: 1.8rem;
+    }
+
+    .join form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .join input[type="email"] {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-social {
+        margin-top: 1rem;
+    }
+
+    .footer-social a {
+        margin: 0 0.5rem;
+    }
 
 }
