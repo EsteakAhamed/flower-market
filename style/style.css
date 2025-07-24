@@ -96,6 +96,73 @@ body {
     height: auto;
 }
 
+.plants {
+    padding: 4rem 0;
+}
+
+.plants .container {
+    text-align: center;
+}
+
+.plants h2 {
+    font-size: 2.5rem;
+    color: #f97316;
+    margin-bottom: 1rem;
+}
+
+.plants p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: #f97316;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #e06c1a;
+}
+
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
@@ -132,5 +199,9 @@ body {
 
     .hero-text p {
         font-size: 1rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
